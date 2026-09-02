@@ -1,0 +1,83 @@
+generated: '2026-09-02'
+method: searched
+source: https://lookmee.jp/plan/
+name: Lookmee (ルクミー) plans and pricing
+provider: Unifa Inc.
+product: Lookmee — comprehensive childcare ICT service
+currency: JPY
+tax_note: >-
+  All monthly prices are published exclusive of Japanese consumption tax (税抜). Prices do not vary
+  with the number of enrolled children or staff at the facility; only the nap-check sensor option
+  scales with sensor count.
+sales_model: >-
+  Sales-led. Both plans are contracted through a Unifa sales representative — there is no
+  self-serve checkout, no published API-usage pricing and no developer tier, because Unifa
+  publishes no public API.
+plan_count: 2
+plans:
+- name: カスタマイズプラン (Customize Plan)
+  audience: Facilities that want to start small and pick their own features
+  price: 5000
+  currency: JPY
+  billing_period: monthly
+  price_display: 月額5,000円（税抜）
+  included:
+  - クラスボード — class information in one place
+  - 園児メモリー — child ledger, growth records, yoroku
+  - 連絡帳 — contact book
+  - おたより — newsletters / broadcast notices
+  - フォト — photo capture, sale and management
+  - ドキュメンテーション — childcare documentation
+  - すくすくレポート — Care AI growth report
+  - ルクミーノート app (educators) and ルクミー for FAMILY app (parents)
+  - Operation manuals, customer support, training videos and case studies
+  overage: null
+  limits:
+    per_child_pricing: false
+    per_staff_pricing: false
+- name: スタンダードプラン (Standard Plan)
+  audience: Facilities new to ICT that want guided onboarding
+  price: 30000
+  currency: JPY
+  billing_period: monthly
+  price_display: 月額30,000円（税抜）
+  list_price_equivalent: 61500
+  list_price_note: Published as equivalent to ¥61,500/month of separately-purchased services
+  included:
+  - Everything in the Customize Plan
+  - 伴走型ICT活用支援 — accompanied ICT adoption support programme
+  - データ安心パック — IP allowlist, data-breach liability cover, data recovery/deletion
+  overage: null
+  limits:
+    per_child_pricing: false
+    per_staff_pricing: false
+paid_options:
+  functional:
+  - 帳票管理 (forms / guidance plans and logs)
+  - 午睡チェック (nap check sensors — priced per sensor)
+  - 体温計 (non-contact thermometer)
+  - 登降園 (attendance timestamping)
+  - 請求管理 (billing) / 口座振替 (direct debit)
+  - シフト管理 (shift management)
+  - バス位置情報 (school bus GPS)
+  assurance:
+  - 帳票カスタマイズパック
+  - 保護者対応すいすいパック (parent groups, surveys)
+  - データ安心パック (max ¥3,000,000 per-incident data-breach cover)
+  hardware_rental:
+  - iPad mini (Wi-Fi model)
+  - iPhone SE
+  - 登降園専用タブレット (attendance tablet)
+  - Pocket Wi-Fi / Wi-Fi router
+discounts:
+- name: 乗り換え応援割引 (switching promotion)
+  terms: Up to 12 months of the ICT monthly fee free for facilities migrating from another childcare ICT vendor
+- name: 開園応援割引 (new-facility promotion)
+  terms: Up to 3 months of the ICT monthly fee free for facilities opening within 6 months
+subsidies_accepted:
+- MHLW 保育所等におけるICT化推進補助金
+- 企業主導型保育事業費補助金 (防犯・安全対策強化加算 / 運営支援システム導入加算)
+- MEXT 教育支援体制整備事業費交付金 (ICT化推進)
+- 東京都福祉保健局 保育所等におけるICT化推進事業費補助金
+- 安全対策事業（睡眠中の事故防止対策）補助金
+- METI IT導入補助金

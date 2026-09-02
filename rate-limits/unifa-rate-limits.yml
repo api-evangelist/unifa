@@ -1,0 +1,22 @@
+generated: '2026-09-02'
+method: searched
+source: https://lookmee.jp/help/
+provider: Unifa Inc.
+limit_count: 0
+note: >-
+  Unifa publishes no public API, so there are no published rate limits to record. The Lookmee
+  product API host (https://api.lookme-e.com) exists and answers with an AWS API Gateway
+  `{"message":"Forbidden"}` body to every anonymous request on every path probed, so no live
+  rate-limit response headers could be observed either. Neither the Lookmee FAQ, the plans page,
+  nor the terms of use mention request quotas, throttling, burst allowances or Retry-After
+  behaviour. This is an honest zero, not an unchecked field.
+scopes: []
+response_headers: []
+exhaustion_status: null
+evidence:
+- url: https://api.lookme-e.com/
+  status: 403
+  body: '{"message":"Forbidden"}'
+- url: https://lookmee.jp/help/
+  status: 200
+  note: FAQ covers security, contracts, pricing, operations and support — no API or quota section.

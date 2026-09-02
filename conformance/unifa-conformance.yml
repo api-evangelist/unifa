@@ -1,0 +1,74 @@
+generated: '2026-09-02'
+method: searched
+source: https://lookmee.jp/data_security/
+provider: Unifa Inc.
+scope: >-
+  Compliance and standards posture of Unifa and its Lookmee childcare ICT service. Unifa publishes
+  no machine-readable API contract, so every entry below is asserted from the provider's own public
+  security and FAQ pages rather than derived from a specification.
+attribution_warning: >-
+  IMPORTANT — the ISO/IEC and CSA STAR certifications Lookmee names on its security page are stated
+  as properties of the HOSTING ENVIRONMENT Lookmee is built on ("...の認定を受けた環境で構築されています"),
+  not as certifications held by Unifa Inc. They are recorded here as environment_certifications and
+  are deliberately NOT claimed as Unifa's own. The only certification the page attributes to Unifa
+  itself is the Japanese Privacy Mark.
+conformance:
+- id: privacy-mark
+  name: プライバシーマーク (Privacy Mark, JIS Q 15001)
+  conforms: true
+  holder: Unifa Inc. (ユニファ株式会社)
+  evidence:
+    url: https://lookmee.jp/data_security/
+    quote: ルクミーの運営会社であるユニファ株式会社は、プライバシーマークを取得しています。
+    http_status: 200
+- id: appi
+  name: Act on the Protection of Personal Information (個人情報保護法, Japan)
+  conforms: true
+  evidence:
+    url: https://unifa-e.com/company/privacy.html
+    note: Published personal-information protection policy (個人情報保護方針)
+    http_status: 200
+- id: lgwan
+  name: LGWAN (総合行政ネットワーク) compatibility for public-sector facilities
+  conforms: true
+  evidence:
+    url: https://lookmee.jp/news/
+    note: >-
+      2023-08-10 announcement that Lookmee supports LGWAN, the Japanese local-government wide-area
+      network; a dedicated LGWAN build of the educator app is published on Google Play.
+    http_status: 200
+- id: oauth2
+  conforms: false
+  evidence: No OAuth 2.0 authorization server is published; /.well-known/oauth-authorization-server 404/403 on every host.
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration 404/403 on every host.
+- id: rfc9457
+  conforms: false
+  evidence: No published API contract or error reference to assert a problem+json envelope against.
+- id: rfc9116
+  name: security.txt
+  conforms: false
+  evidence: /.well-known/security.txt returns 404 (unifa-e.com, portal.lookme-e.com) or 403 (lookmee.jp, api.lookme-e.com).
+domain_standards:
+  market: Japanese early-childhood education and childcare administration
+  assessed: true
+  conforming: false
+  note: >-
+    Lookmee announced (2026-03-31) that it connects to the Children and Families Agency
+    (こども家庭庁) 保育業務施設管理プラットフォーム and 保活情報連携基盤 "via API and other methods". That is a
+    bilateral integration into a government platform, not a domain standard Unifa's own contract
+    declares — and because Unifa publishes no contract, there is nothing in which a standard
+    signature (schema URN, message type, metadata surface) could be observed. Recorded as assessed
+    and not conforming rather than left blank; this is reward-only, so no penalty applies.
+  evidence:
+    url: https://unifa-e.com/news/release/20260331-pf_hokatsujoho_lookmee
+environment_certifications:
+  attributed_to: hosting environment (not Unifa Inc.)
+  source: https://lookmee.jp/data_security/
+  certifications:
+  - ISO/IEC 27001:2013
+  - ISO/IEC 27017:2015
+  - ISO/IEC 27018:2019
+  - ISO/IEC 9001:2015
+  - CSA STAR CCM v3.0.1

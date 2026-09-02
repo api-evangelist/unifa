@@ -1,0 +1,62 @@
+generated: '2026-09-02'
+method: searched
+source: https://lookmee.jp/news/
+name: Lookmee product update log (機能アップデート)
+provider: Unifa Inc.
+docs: https://lookmee.jp/news/
+scheme: >-
+  Dated product notices published on the Lookmee news page under a 機能アップデート ("feature update")
+  category, interleaved with ニュースリリース (press releases) and メディア掲載 (media coverage). There is
+  no semantic version number, no per-release page numbering, and no RSS or JSON feed for the
+  update category — the category is a client-side filter on one HTML listing.
+versioning: none-published
+current_version: null
+api_changelog: false
+api_changelog_note: >-
+  These are end-user product release notes, not API change notes. Unifa publishes no API, so there
+  is no contract-level changelog, deprecation notice or breaking-change policy to record.
+entries:
+- date: '2025-10-09'
+  category: 機能アップデート
+  title: 新機能「すくすくレポート」を正式リリースしました！
+  title_en: Sukusuku Report released to general availability
+  breaking: false
+  additions: true
+- date: '2024-04-18'
+  category: 機能アップデート
+  title: ルクミー登降園が公金管理システム（通称ピムス）と連携可能になりました
+  title_en: Lookmee Attendance can now integrate with the PIMS public-funds management system
+  breaking: false
+  additions: true
+- date: '2024-04-18'
+  category: 機能アップデート
+  title: 【さらに便利に】ルクミーフォトのAI顔認識技術で園児の写真枚数の偏り（ばらつき）を確認！
+  title_en: Lookmee Photo AI face recognition now surfaces imbalance in per-child photo counts
+  breaking: false
+  additions: true
+- date: '2023-12-01'
+  category: 機能アップデート
+  title: 保育総合ICTサービス「ルクミー」、「保護者対応すいすいパック」をリリース
+  title_en: Parent-response "Suisui Pack" released
+  breaking: false
+  additions: true
+- date: '2023-11-01'
+  category: 機能アップデート
+  title: 手入力での午睡チェック表記録もルクミーで
+  title_en: Manual entry of nap-check records added
+  breaking: false
+  additions: true
+- date: '2023-10-05'
+  category: 機能アップデート
+  title: おたよりと帳票に続いて連絡帳にも「ChatGPT」入力補助機能を追加搭載
+  title_en: ChatGPT-assisted composition extended from newsletters and forms to the contact book
+  breaking: false
+  additions: true
+window: >-
+  Recent 機能アップデート entries visible on the first page of the Lookmee news listing as of
+  2026-09-02. Company-level press releases (which are more frequent) are excluded.
+related_feeds:
+- name: Unifa developer blog (ユニファ開発者ブログ)
+  url: https://tech.unifa-e.com/
+  feed: https://tech.unifa-e.com/feed
+  note: Engineering blog, not a product changelog; recorded as the Blog/BlogRSS pointer in apis.yml.

@@ -64,5 +64,6 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Unifa is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Unifa Inc. (ユニファ株式会社) is a Tokyo-based childcare-technology company founded in May 2013 that develops and operates Lookmee (ルクミー), a comprehensive ICT, IoT and AI service for Japanese nursery schools, kindergartens and certified children's centers. Unifa publishes no public API, developer portal, specification or SDK; this profile records its identity, published pricing, product update log and compliance posture, and the probes that establish the absence of a developer surface.
+- https://unifa-e.com/
+- https://lookmee.jp/

@@ -1,17 +1,59 @@
 aid: unifa
 name: Unifa
-description: 'Unifa is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Unifa Inc. (ユニファ株式会社) is a Tokyo-based childcare-technology company founded in May 2013 that
+  develops and operates Lookmee (ルクミー), a comprehensive ICT, IoT and AI service for Japanese nursery
+  schools, kindergartens, certified children's centers, municipality-run facilities and after-school
+  clubs. Lookmee bundles class-information management, guidance-plan and daily-log paperwork, a
+  parent communication app (Lookmee for FAMILY), internet photo sales, nap-check sensors,
+  non-contact thermometers, attendance timestamping, childcare-fee billing and direct debit, shift
+  and attendance management, school-bus GPS tracking, and the Care AI "Sukusuku Report"
+  growth-visualization product. The company reports more than 20,000 cumulative service
+  installations across all 47 prefectures. Unifa publishes no public developer program — no
+  developer portal, API reference, OpenAPI/AsyncAPI specification, SDK, CLI or MCP server — and the
+  Lookmee product API host answers 403 to every anonymous request.
+image: https://unifa-e.com/assets/img/parts/ogp_new.png
 url: https://raw.githubusercontent.com/api-evangelist/unifa/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment
 specificationVersion: '0.20'
 created: '2026-09-02'
 modified: '2026-09-02'
 tags:
 - Company
+- Childcare
+- Education Technology
+- Early Childhood Education
+- SaaS
+- Japan
+- Internet of Things
+- Artificial Intelligence
+- Workforce Management
+- Photo Sharing
+x-enrichment:
+  date: '2026-09-02'
+  status: minimal
+  artifacts_added: 7
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Unifa ships Lookmee only as an end-user childcare ICT product: no developer portal, API
+    reference, spec, SDK or GitHub org exists on any Unifa or Lookmee host, and the product's own
+    backend at api.lookme-e.com answers an AWS API Gateway 403 to every anonymous path.
+  evidence:
+    - url: https://api.lookme-e.com/openapi.json
+      status: 403
+    - url: https://unifa-e.com/openapi.json
+      status: 404
+    - url: https://unifa-e.com/.well-known/agent-card.json
+      status: 404
+    - url: https://lookmee.jp/help/
+      status: 200
+  checked: '2026-09-02'
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +61,33 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: LLMsTxt
+  url: llms/unifa-llms.txt
+- type: RateLimits
+  url: rate-limits/unifa-rate-limits.yml
+- type: ChangeLog
+  url: changelog/unifa-changelog.yml
+- type: Compliance
+  url: https://lookmee.jp/data_security/
+- type: Conformance
+  url: conformance/unifa-conformance.yml
+- type: Plans
+  url: plans/unifa-plans-pricing.yml
+- type: DomainSecurity
+  url: security/unifa-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://unifa-e.com/
+- type: Support
+  url: https://lookmee.jp/help/
+- type: Blog
+  url: https://tech.unifa-e.com/
+- type: BlogRSS
+  url: https://tech.unifa-e.com/feed
+- type: Pricing
+  url: https://lookmee.jp/plan/
+- type: Login
+  url: https://portal.lookme-e.com/login/organization
+- type: TermsOfService
+  url: https://lookmee.jp/terms/
+- type: PrivacyPolicy
+  url: https://unifa-e.com/company/privacy.html
