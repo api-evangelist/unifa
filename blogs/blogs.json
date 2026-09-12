@@ -1,0 +1,21 @@
+{
+  "repo": "unifa",
+  "feeds": [
+    {
+      "source": "https://lookmee.jp/help/",
+      "feed_url": "https://lookmee.jp/help/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://tech.unifa-e.com/",
+      "feed_url": "https://tech.unifa-e.com/feed",
+      "title": "",
+      "saved": 1,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 1,
+  "fetched": "2026-09-06T19:17:18Z"
+}
