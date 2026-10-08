@@ -81,3 +81,22 @@ subsidies_accepted:
 - 東京都福祉保健局 保育所等におけるICT化推進事業費補助金
 - 安全対策事業（睡眠中の事故防止対策）補助金
 - METI IT導入補助金
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: カスタマイズプラン (Customize Plan)
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: スタンダードプラン (Standard Plan)
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
