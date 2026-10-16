@@ -2,13 +2,6 @@
   "repo": "unifa",
   "feeds": [
     {
-      "source": "https://lookmee.jp/help/",
-      "feed_url": "https://lookmee.jp/help/",
-      "title": "",
-      "saved": 0,
-      "method": "none"
-    },
-    {
       "source": "https://tech.unifa-e.com/",
       "feed_url": "https://tech.unifa-e.com/feed",
       "title": "",
@@ -21,8 +14,15 @@
       "title": "",
       "saved": 0,
       "method": "feed"
+    },
+    {
+      "source": "https://lookmee.jp/help/",
+      "feed_url": "https://lookmee.jp/help/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "post_count": 21,
-  "fetched": "2026-10-03T12:30:02Z"
+  "post_count": 23,
+  "fetched": "2026-10-10T13:15:00Z"
 }
